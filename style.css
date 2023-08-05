@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.navbar{   
+  width: 100%;
+  height: 80px;
+  background: #29284e;
+  
+}
+label.logo{
+  font-size: 30px;
+  color: white;
+  margin: 0 100px;
+  line-height: 80px;
+}
+
+
+:root{
+    --background-color:#fff;
+    --text-color:rgb(14, 30, 53);
+    --title-color:rgb(14, 30, 53);
+}
+
+.dark-theme{
+    --background-color:rgb(14, 30, 53);
+    --text-color:#fff;
+    --title-color:#fff;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.8s,color 0.8s;
+} 
+
+h1{
+   text-align: center;
+}
+  
+  .textarea-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100%; /* Set an initial height */
+    resize: none; /* Disable default textarea resizing handles */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden; /* Hide vertical scrollbar */
+  }
+
+  #div1{
+    width: 80%;
+    padding: 20px;
+  }
+
+.toggle-btn{
+    background: #4864ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 20px;
+}
+
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: #4864ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background: #4864ff;
+}
+label.logo{
+    font-size: 30px;
+    color: white;
+    margin: 0 100px;
+    line-height: 80px;
+}
+
+#btn2{
+    margin: 5px;
+}
+@media (max-width:360px) {
+    label.logo{
+        font-size: 15px;
+        margin: 0px 50px;
+    }
+    #btn1{
+      display: none;
+    }
+
+    #btn2{
+        margin: 3px;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:466px) {
+    label.logo{
+        font-size: 25px;
+        margin: 0px 50px;
+    }
+    #btn1{
+        font: small-caption;
+        height: 30px;
+        border-radius: 20px;
+        width: 65px;
+       }
+
+    #btn2{
+        margin: 3px;
+    }
+}
+
+@media (max-width:750px) {
+    label.logo{
+        margin: 0px 70px;
+    }
+}
