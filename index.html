@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FormaTXT</title>
+
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <label class="logo">FormaTXT</label>
+      
+      <div class="toggle-btn" id="btn1">
+        <span id="btnText">Dark</span>
+        <img src="moon.png" id="btnIcon" />
+      </div>
+    </nav>
+
+    <div class="container my-3" id="div1">
+      <h1>Enter your text to analyze</h1>
+      <div class="textarea-container">
+        <textarea
+          id="textarea1"
+          placeholder="Enter your text here"
+          rows="10"
+          style="padding: 10px"
+        ></textarea>
+      </div>
+
+      <div id="btn" class="my-3">
+        <button type="button" class="btn btn-primary" id="btn2" style="padding: 4px">
+          <input type="color" onchange="color(this)" />
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="bold(this)">
+          <i class="fa-solid fa-bold"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="italic(this)">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="underline(this)">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="upper(this)">
+          Uppercase
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="lower(this)">
+          Lowercase
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="count(this)">
+          Count characters
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="extra(this)">
+          Remove Extra space
+        </button>
+        <button type="button" class="btn btn-primary" id="btn2" onclick="copy(this)">
+          Copy text
+        </button>
+      </div>
+
+      <h3 id="charCount">Character count: 0</h3>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
